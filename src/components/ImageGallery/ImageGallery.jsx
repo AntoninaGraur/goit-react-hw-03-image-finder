@@ -48,7 +48,7 @@ import {ImageGaleryStyled} from './ImageGallery.styled'
       );
 
       if (!totalHits) {
-        this.warn();
+        return toast.error('Something went wrong:) Please try again.');
       }
 
       this.setState(prev => ({
